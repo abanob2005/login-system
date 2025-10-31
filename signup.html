@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Join Us!</h3>
+                        <p>Create a new account</p>
+                    </div>
+                    <div class="card-body">
+                        <form action="#" method="post">
+                            <div class="mb-3">
+                                <label for="signupName" class="form-label">Full Name</label>
+                                <input oninput=" inputValidation(nameRegex, this )" type="text" class="form-control"
+                                    id="signupName" placeholder="Enter your full name">
+                                <p class="d-none text-danger mt-1 text-capitalize">Name must start with a capital and be at least 3
+                                    chars.</p>
+                            </div>
+                            <div class="mb-3">
+                                <label for="signupEmail" class="form-label">Email</label>
+                                <input oninput=" inputValidation(emailRegex, this )" type="email" class="form-control"
+                                    id="signupEmail" placeholder="Enter your email">
+                                <p class="d-none text-danger mt-1 text-capitalize">Please enter valid email</p>
+                            </div>
+                            <div class="mb-3">
+                                <label for="signupPhone" class="form-label">Phone</label>
+                                <input oninput=" inputValidation(phoneRegex, this )" type="text" class="form-control "
+                                    id="signupPhone" placeholder="Enter your Phone Number">
+                                <p class="d-none text-danger mt-1 text-capitalize">Please Enter valid Egyption Number.</p>
+                            </div>
+                            <div class="mb-3">
+                                <label for="signupPassword" class="form-label">Password</label>
+                                <input oninput=" inputValidation(passwordRegex, this )" type="password"
+                                    class="form-control" id="signupPassword" placeholder="Enter a strong password">
+                                <p class="d-none text-danger mt-1 text-capitalize">"Password must be at least 8 characters, with upper &
+                                    lowercase letters, a number, and a special character."</p>
+                            </div>
+                            <div class="mb-3">
+                                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="confirmPassword"
+                                    placeholder="Re-enter your password">
+                                <p class="d-none text-danger mt-1">Please make sure both passwords match</p>
+                            </div>
+                            <button onclick="addUser()" type="button" id="signupButton" class="btn btn-primary w-100">Sign Up</button>
+                            <p class="d-none text-danger mt-1 text-capitalize">your mail or phone number was added before</p>
+
+                        </form>
+                        <p class="text-center mt-3">Already have an account? <a href="./login.html">Login here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
