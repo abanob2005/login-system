@@ -99,7 +99,7 @@ function inputValidation(regex, input) {
 function openLogin() {
     alert("signup complete!");
 
-    setTimeout(() => { window.location.href = "./login.html"; }, 1000);
+    setTimeout(() => { window.location.href = "./index.html"; }, 1000);
 }
 
 var users = JSON.parse(localStorage.getItem("user")) || [];
@@ -146,6 +146,6 @@ window.addEventListener("DOMContentLoaded", () => {
 function logout() {
 
     sessionStorage.removeItem("loggedUser");
-    window.location.href = "login.html";
+    window.location.href = "index.html";
 }
 
