@@ -72,6 +72,7 @@ function reset() {
     userConfirmPasswordInput.value = null;
     userNameInput.classList.remove("is-valid")
     userEmailInput.classList.remove("is-valid")
+    userPhoneInput.classList.remove("is-valid")
     userPasswordInput.classList.remove("is-valid")
     userConfirmPasswordInput.classList.remove("is-valid")
 }
@@ -123,10 +124,10 @@ function login() {
     if (found) {
         alert("Login successful!");
 
-        // ✅ خزّن الاسم في sessionStorage
+        
         sessionStorage.setItem("loggedUser", matchedUser.userName);
 
-        // انقل المستخدم لصفحة home.html
+       
         window.location.href = "home.html";
     } else {
         alert("Invalid username or password");
