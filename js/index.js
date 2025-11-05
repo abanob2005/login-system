@@ -27,7 +27,7 @@ function addUser() {
             if (users[i].userEmail === userEmailInput.value.trim() ||
                 users[i].userPhone === userPhoneInput.value.trim()) {
                 exists = true;
-                break; // توقف عن الفحص فور العثور على تطابق
+                break; 
             }
         }
 
